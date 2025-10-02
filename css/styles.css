@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    background-image: url('../img/um-padrao-de-assuntos-bonitos-para-aprender-calculadora_863302-227.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    min-height: 100vh;
+}
+#calc{
+   width: 100%;
+    max-width: 350px;
+    padding: 1em;
+    background-color: aliceblue;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);;
+
+}
+calc h3{
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: .5em;
+    color: #666;
+}
+#operations{
+    text-align: right;
+    margin-bottom: 0.5em;
+}
+#previous-operation,#current-operation{
+    padding: 0.2em ;
+    overflow-wrap: break-word ;
+    min-height: 1.6em;
+}
+
+#previous-operation{
+    color: #777;
+}
+#current-operation{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6px;
+}
+#buttons-container button{
+   border: none;
+    border-radius: 8px;
+    height: 3em;
+    font-size: 1.1em;
+    background-color:#dbdbdb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#buttons-container .number{
+    background-color: #f3f3f3;
+}
+#buttons-container button:hover{
+    background-color: #bababa;
+}
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: #75a5cb;
+    font-weight: bold;
+}
+#buttons-container #equal-btn:hover{
+    background-color: #3a91b8
+}
+/* ----------- RESPONSIVIDADE ----------- */
+@media (max-width: 500px) {
+    body {
+        padding: 1em;
+    }
+
+    #calc {
+        max-width: 100%;
+        padding: 0.8em;
+    }
+
+    #calc h3 {
+        font-size: 0.9em;
+    }
+
+    #current-operation {
+        font-size: 1.8em;
+    }
+
+    #buttons-container button {
+        height: 2.5em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 350px) {
+    #buttons-container {
+        grid-template-columns: repeat(2, 1fr); /* em telas bem pequenas, 2 colunas */
+    }
+
+    #buttons-container #equal-btn {
+        grid-column: span 2;
+    }
+}
+
