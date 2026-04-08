@@ -9,9 +9,10 @@ Praticar HTML, CSS e JavaScript
 Desenvolver lógica de programação
 Trabalhar com manipulação de eventos e interações
 🛠️ Tecnologias utilizadas
-HTML5
-CSS3
-JavaScript
+*HTML5
+*CSS3
+*JavaScript
+
 ⚠️ Observação
 
 Este é um projeto de aprendizado, portanto podem existir pequenos erros ou melhorias a serem feitas.
